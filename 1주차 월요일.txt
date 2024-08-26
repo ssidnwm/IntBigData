@@ -1,0 +1,33 @@
+#big data introducion 01 week 08-26
+
+목요일 수업없음
+
+머신러닝
+statistics approch
+
+파이썬 사용한다
+
+다음 월요일 수업시간까지 목요일에 올라가는 lms보기 이후에는 영상 내려감
+
+
+정형화된 데이터, 정형화되지 않은 데이터.
+
+
+현업에서 혹은 문제해결에 주로 사용되는 데이터는 정형화되지 않은 데이터이지만, 이 수업에서는 주로 정형화되는 데이터를 다루는 내용을 배운다.
+
+그 이유로는 현업에서 사용할 정형화되지 않은 데이터 Ex 음성, 채팅 메신저 등등의 데이터를 가공하여 정형화시킨 후 사용하며, 이 데이터의 가공 분야에 있어서는 이후 텍스트마이닝, 또는 데이터 마이닝 수업 등등에서 다룰 예정.
+
+
+빅데이터에 관련된 강의
+
+strctured data-> fixed field and Relational datavbase, spreadsheet등등
+
+정리가 끝난 데이터를 의미하는 것으로 이해.
+
+
+semi-structured data -> formating data
+HTML, JSON, web-page등 어느정도 정형화가 이루어진 상태이지만 이것만으로 곧바로 인사이트를 얻기 어려운 데이터 상태
+
+Unstructured data-> Inconsistent data structure
+소셜 데이터, 텍스트 음성 비디오 등의 데이터
+
