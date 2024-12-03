@@ -1,0 +1,75 @@
+공부는 언제하냐 진짜 ㅋㅋ
+
+적어도 중간고사 대비로 깃허브 정리하는건 해야하는데,
+
+
+shape, -> (9,3)의 형태로 rows가 앞에오고 columns가 뒤에 옴
+
+dimantion을 보여주는 함수?
+(row , col) 이런식으로 출력
+
+dtypes 는 가 데이터 타입의 벨류 object인지, int인지 float인지를 변수별로 출력해줌
+
+그리고 나오는 dtype: object는 뭘까?
+
+
+.values  데이터프레임의 값들을 array의 형태로 출력해주는구나
+변수가 많을때는 특정 부분을 보여주지 않는데, 이때 .columns를 하라는건가?
+
+
+.index는 데이터프레임의 rangelindex라는 것을 반환하는데, ( 시작행, 마지막행, step)을 보여준다
+
+그러니까 row의 인덱스 행을 보여준다고 생각하면 쉬울듯
+
+
+type하고 df['col']을 하면
+pandas.core.series.Series가 나오네, 이건 뭐지?
+
+하나의 [] 브라켓만 쓰면 series가 나오는데, 두개 [[col]]을 쓰면 동일한 데이터여도 df으로 나오는구나
+
+.unique는 1개의 값들만 가져옴. 동일한 한 개의 값 겹치지 않음
+
+
+.nunique는 그 유니크한 값들에 대해 숫자로 반환함
+
+.value_counts( normalize = True or False) 그 각각 unique값들에 대해 숫자를 함께 보여줌
+
+그리고 normalize를 True로 하면 %로 보여주는듯
+.rename은 이름 바꾸는거
+근데 inplace는 뭐지?
+
+원래 데이터프레임을 유지할 것이냐, 새로운 데이터프레임으로 만들 것이냐
+TRUE가 원본 데이터프레임을 직접 수정하기
+False가 새로운 데이터프레임을 반환하기
+
+즉 새로운 데이터프레임을 만들거면 false,
+아니면 true로 지금거에 업데이트하기
+
+데이터  필터링
+
+iloc을 사용하는구나
+iloc[행,열]
+
+loc['행이름','열이름']
+
+loc[bool array가 들어간다는건 뭘까?]
+
+read_csv같은걸 할때,
+header을 None으로 하면 열이름에 해당하는게 알아서 내려와서 행으로 만들어진다
+
+
+NaN = Na값
+
+결측치에 대해서는 어떻게 발생한 것인지 왜 일어났는지 알아내는 것이 중요하다
+
+결측치를 찾기 위해서 사용하는 메서드는
+.isnull()
+이다 결측치를 true로 반환한다
+
+.notnull()은 반대로 결측치면 false를 반환한다
+
+.isnull().any() 이러면 True가 어디에 있는지 확인할 수 있고 열 전체에 대해 True와 False를 찾음, .isnull().any().any()를 하면 그 안에서 다시 True를 찾아서 반환한다.
+
+그냥 isnull().sum()을 하면 True, False로 나와있어도 그 결측치가 몇개인지 찾을수있구나
+
+
